@@ -10827,3 +10827,7 @@ textarea.form-control-lg {
 body {
   background-size: cover;
 }
+
+.slow img {
+	transition: all 0.3s linear;
+}
