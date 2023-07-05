@@ -6,3 +6,5 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+// 구에 따른 색 변경
+// 자바 스크립트로 구현 function
