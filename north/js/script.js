@@ -1,3 +1,5 @@
+import data from "../data.js"
+
 
 function left_img() {
 
@@ -21,3 +23,18 @@ window.onload = function () {
     var el = document.getElementById("choice");
     el.onclick = left_img;
 }
+
+function write_list()
+{
+const li = document.createElement("li");
+li.setAttribute('id', data.test.name);
+
+const textNode = document.createTextNode(data.test.name);
+li.appendChild(textNode);
+
+
+document
+    .getElementById('listUp')
+    .appendChild(li);
+}
+

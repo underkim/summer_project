@@ -1,9 +1,9 @@
 var test =
 {
-    name: "",
-    location: "",
-    parking: "",
-    picture: "",
-    explain: "",
+    name: "test",
+    location: "loc",
+    parking: "par",
+    picture: "pic",
+    explain: "exp",
 
 }
