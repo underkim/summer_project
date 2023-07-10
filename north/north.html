@@ -77,29 +77,33 @@
                 <img src="north.png" class="relative" style="width:100%; height:auto;"></image>
             </div>
             <div class="col" id="list" style="visibility: hidden">
-
-                <script>
-                    write_list();
-                </script>
             </div>
 
         </div>
         <div class="row">
             <div class="col">
-                <button type="button" style="text-decoration:none; font-size: 25px;" onclick='change_img()'>볼거리</button>
+                <button type="button" style="font-size: 25px;" onclick='change_img("see");'>볼거리</button>
             </div>
             <div class="col">
-                <a href="" style="text-decoration:none; font-size: 25px;">먹을거리</a>
+                <button type="button" style="font-size: 25px;" onclick='change_img("eat");'>먹거리</button>
             </div>
             <div class="col">
-                <a href="" style="text-decoration:none; font-size: 25px;">즐길거리</a>
+                <button type="button" style="font-size: 25px;" onclick='change_img("enjoy");'>놀거리</button>
             </div>
 
         </div>
 
     </div>
     <footer class="fixed-bottom">
-        <a href="/entrance page/index.html" style="text-decoration:none; padding-left:25px;">Home</a>
+
+        <p>
+            <a href="/entrance page/index.html" style="text-decoration:none; padding-left:25px;">Home</a>
+            <button type="button" style="float:right;" onclick="backTopage();">이전</button>
+        </p>
+
+
+
+
     </footer>
 
     <!-- Core theme JS-->
