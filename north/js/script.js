@@ -30,3 +30,7 @@ function backTopage() {
     front.style.visibility = 'hidden';
     write_list("empty");
 }
+
+function popup(){
+    window.open('/north/popup.html','놀러가자', "width = 1000, height = 600, top = 200, left = 400,  location = no");
+}
