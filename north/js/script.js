@@ -23,11 +23,11 @@ function write_list(name) {
     let text = "<ul>";  //ul 태그
 
 
-    text += "<li onclick='popup()'>" + data[0]["name"] + "</li>";
+    text += "<li onclick='popup(" + '"' + data[0]["name"] + '"' + ");'>" + data[0]["name"] + "</li>";
 
     text += "</ul>";
-
     document.getElementById("list").innerHTML = text;
+    console.log(text);
 
 }
 
@@ -51,6 +51,37 @@ function backTopage() {
     write_list("empty");
 }
 
-function popup() {
-    window.open('popup.html', '놀러가자', "width = 1000, height = 600, top = 200, left = 400,  location = no");
+function popup(name) {
+    window.open('popup.html', name.String, "width = 1000, height = 600, top = 200, left = 400,  location = no");
+}
+
+
+
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+// popup() data load;
+
+function dataLoad(value) {
+    const data = [{
+        name: "이름1",
+        location: "장소1",
+        picture: "사진1",
+    }];
+
+
+    document.getElementById("something").innerHTML = "";  // 초기화
+
+    let size = data.length;
+    for (let i = 0; i < size; i++) {
+        if (value == data[i]["name"]) {
+            let text = "<h2>";  // 첫 이름
+            text += data[i]["name"] + "<br>";
+            text += data[i]["location"] + "<br>";
+            text += "</h2>";
+            document.getElementById("something").innerHTML = text;
+        }
+    }
+
 }
