@@ -1,14 +1,34 @@
 function write_list(name) {
 
+    const data = [{
+        name: "이름1",
+        location: "장소1",
+        picture: "사진1",
+    }];
+    // data 뽑는 부분
+    if (name == "empty") {
+        // 초기화
+    }
+    else if (name == "see") {
+        // 볼거
+    }
+    else if (name == "enjoy") {
+        // 놀거
+    }
+    else if (name == "eat") {
+        // 먹거
+    }
+
     document.getElementById("list").innerHTML = "";  // 초기화
     let text = "<ul>";  //ul 태그
 
 
-    text += "<li>" + name + "</li>";
+    text += "<li onclick='popup()'>" + data[0]["name"] + "</li>";
 
     text += "</ul>";
 
     document.getElementById("list").innerHTML = text;
+
 }
 
 function change_img(name) {
@@ -31,6 +51,6 @@ function backTopage() {
     write_list("empty");
 }
 
-function popup(){
-    window.open('/north/popup.html','놀러가자', "width = 1000, height = 600, top = 200, left = 400,  location = no");
+function popup() {
+    window.open('popup.html', '놀러가자', "width = 1000, height = 600, top = 200, left = 400,  location = no");
 }
