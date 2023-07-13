@@ -1,3 +1,6 @@
+
+var popupWindow;
+
 function write_list(name) {
 
     const data = [{
@@ -27,7 +30,7 @@ function write_list(name) {
 
     text += "</ul>";
     document.getElementById("list").innerHTML = text;
-    console.log(text);
+
 
 }
 
@@ -52,7 +55,9 @@ function backTopage() {
 }
 
 function popup(name) {
-    window.open('popup.html', name.String, "width = 1000, height = 600, top = 200, left = 400,  location = no");
+    let windowName = name;
+    window.open('popup.html', windowName, "width = 1000, height = 600, top = 200, left = 400,  location = no");
+
 }
 
 
@@ -74,11 +79,12 @@ function dataLoad(value) {
     document.getElementById("something").innerHTML = "";  // 초기화
 
     let size = data.length;
+
     for (let i = 0; i < size; i++) {
         if (value == data[i]["name"]) {
             let text = "<h2>";  // 첫 이름
-            text += data[i]["name"] + "<br>";
-            text += data[i]["location"] + "<br>";
+            text += data[0]["name"] + "<br>";
+            text += data[0]["location"] + "<br>";
             text += "</h2>";
             document.getElementById("something").innerHTML = text;
         }
