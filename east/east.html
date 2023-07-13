@@ -28,25 +28,29 @@
             bottom: 0;
             left: 0;
             font-size: 30px;
-            background-color: #6c757d;
+            background-color: #2d3134;
 
         }
 
+        .word {
+            color: rgb(29, 58, 90);
+        }
 
-        a:link {
+        #home:link {
             color: pink;
         }
 
-        a:visited {
-            color: black;
+        #home:visited {
+            color: rgb(71, 118, 68
+            );
         }
 
-        a:hover {
-            color: red;
+        #home:hover {
+            color: rgb(239, 66, 34);
         }
 
-        a:active {
-            color: green
+        #home:active {
+            color: rgb(253, 192, 14);
         }
 
         h1 {
@@ -59,11 +63,20 @@
 
         @font-face {
             font-family: 'gjFont';
-            src: url('font/빛고을광주_Medium.ttf') format('truetype');
+            src: url('../font/빛고을광주_Medium.ttf');
         }
 
         *{
             font-family: 'gjFont';
+        }
+
+        #home {
+            text-decoration:none;
+            padding-left:25px;
+        }
+
+        #backButton {
+            float:right; visibility: hidden;
         }
     </style>
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -80,7 +93,9 @@
     <div class="mainTitle">
         <h1>광주 어디가지?</h1>
     </div>
-    <div class="space"></div>    
+
+    <div class="space"></div>
+
     <div class="conmtainer text-center">
         <div class="row">
             <div class="col" id="div_img1" style="visibility: hidden">
@@ -93,6 +108,9 @@
             </div>
 
         </div>
+
+        <div class="space"></div>
+
         <div class="row">
             <div class="col">
                 <button type="button" style="font-size: 25px;" onclick='change_img("see");'>볼거리</button>
@@ -107,11 +125,13 @@
         </div>
 
     </div>
+
     <footer class="fixed-bottom">
 
         <p>
-            <a href="../entrance page/index.html" style="text-decoration:none; padding-left:25px;">Home</a>
-            <button type="button" style="float:right; visibility: hidden;" onclick="backTopage();"
+            <button type="button" class="word" onclick="location.href='../entrance page/index.html'"
+                id="home">HOME</button>
+            <button type="button" class="word" onclick="backTopage();"
                 id="backButton">이전</button>
         </p>
 
