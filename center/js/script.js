@@ -20,6 +20,8 @@ function change_img(name) {
     list.style.visibility = 'visible';
     let backButton = document.getElementById("backButton");
     backButton.style.visibility = 'visible';
+    let category = document.getElementById('cate_button');
+    category.style.visibility = 'hidden';
     write_list(name);
 }
 
@@ -28,10 +30,12 @@ function backTopage() {
     let second = document.getElementById("div_img2");
     let list = document.getElementById("list");
     let backButton = document.getElementById("backButton");
+    let category = document.getElementById('cate_button');
     list.style.visibility = 'hidden';
     second.style.visibility = 'hidden';
     front.style.visibility = 'visible';
     backButton.style.visibility = 'hidden';
+    category.style.visibility = 'visible';
     write_list("empty");
 }
 
