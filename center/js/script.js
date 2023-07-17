@@ -13,9 +13,9 @@ function write_list(name) {
 
 function change_img(name) {
     let front = document.getElementById("div_img1");
-    front.style.visibility = 'visible';
+    front.style.visibility = 'hidden';
     let second = document.getElementById("div_img2");
-    second.style.visibility = 'hidden';
+    second.style.visibility = 'visible';
     let list = document.getElementById("list");
     list.style.visibility = 'visible';
     let backButton = document.getElementById("backButton");
@@ -29,8 +29,8 @@ function backTopage() {
     let list = document.getElementById("list");
     let backButton = document.getElementById("backButton");
     list.style.visibility = 'hidden';
-    second.style.visibility = 'visible';
-    front.style.visibility = 'hidden';
+    second.style.visibility = 'hidden';
+    front.style.visibility = 'visible';
     backButton.style.visibility = 'hidden';
     write_list("empty");
 }
