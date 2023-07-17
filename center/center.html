@@ -31,20 +31,25 @@
             background-color: #6c757d;
         }
 
-        a:link {
-            color: pink;
+        .word {
+            color: white;
         }
 
-        a:visited {
-            color: black;
+        #home:link {
+            color: rgb(29, 58, 90);
         }
 
-        a:hover {
-            color: red;
+        #home:visited {
+            color: rgb(71, 118, 68
+            );
         }
 
-        a:active {
-            color: green
+        #home:hover {
+            color: rgb(239, 66, 34);
+        }
+
+        #home:active {
+            color: rgb(253, 192, 14);
         }
 
         h1 {
@@ -74,6 +79,15 @@
 
         #cate_button {
             visibility: visible;
+        }
+
+        #home {
+            text-decoration:none;
+            padding-left:25px;
+        }
+
+        #backButton {
+            float:right; visibility: hidden;
         }
     </style>
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -120,8 +134,9 @@
     <footer class="fixed-bottom">
 
         <p>
-            <a href="../entrance page/index.html" style="text-decoration:none; padding-left:25px;">Home</a>
-            <button type="button" style="float:right; visibility: hidden;" onclick="backTopage();"
+            <button type="button" class="word" onclick="location.href='../entrance page/index.html'"
+                id="home">HOME</button>
+            <button type="button" class="word" onclick="backTopage();"
                 id="backButton">이전</button>
         </p>
 

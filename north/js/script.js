@@ -36,41 +36,44 @@ function write_list(name) {
 
 function change_img(name) {
     let front = document.getElementById("div_img1");
-    front.style.visibility = 'visible';
+    front.style.visibility = 'hidden';
     let second = document.getElementById("div_img2");
-    second.style.visibility = 'hidden';
+    second.style.visibility = 'visible';
     let list = document.getElementById("list");
     list.style.visibility = 'visible';
+    let backButton = document.getElementById("backButton");
+    backButton.style.visibility = 'visible';
+    let category = document.getElementById('cate_button');
+    category.style.visibility = 'hidden';
     write_list(name);
     let frontButton1 = document.getElementById("frontButton1");
     let frontButton2 = document.getElementById("frontButton2");
     let frontButton3 = document.getElementById("frontButton3");
-    let backButton = document.getElementById("backButton");
 
     frontButton1.style.visibility = 'hidden';
     frontButton2.style.visibility = 'hidden';
     frontButton3.style.visibility = 'hidden';
-
-    backButton.style.visibility = 'visible';
 }
 
 function backTopage() {
     let front = document.getElementById("div_img1");
     let second = document.getElementById("div_img2");
     let list = document.getElementById("list");
+    let backButton = document.getElementById("backButton");
+    let category = document.getElementById('cate_button');
     list.style.visibility = 'hidden';
-    second.style.visibility = 'visible';
-    front.style.visibility = 'hidden';
+    second.style.visibility = 'hidden';
+    front.style.visibility = 'visible';
+    backButton.style.visibility = 'hidden';
+    category.style.visibility = 'visible';
     write_list("empty");
     let frontButton1 = document.getElementById("frontButton1");
     let frontButton2 = document.getElementById("frontButton2");
     let frontButton3 = document.getElementById("frontButton3");
-    let backButton = document.getElementById("backButton");
 
     frontButton1.style.visibility = 'visible';
     frontButton2.style.visibility = 'visible';
     frontButton3.style.visibility = 'visible';
-    backButton.style.visibility = 'hidden';
 
 }
 
