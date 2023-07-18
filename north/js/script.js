@@ -23,10 +23,10 @@ function write_list(name) {
     }
 
     document.getElementById("list").innerHTML = "";  // 초기화
-    let text = "<ul>";  //ul 태그
+    let text = '<ul  id= '+'"'+'btn'+'"'+'>';  //ul 태그
 
 
-    text += "<li onclick='popup(" + '"' + data[0]["name"] + '"' + ");'>" + data[0]["name"] + "</li>";
+    text +='<li id= '+'"'+'btnmodal'+'"'+" onclick='buttonup();'>"+  data[0]["name"]+ "</li>";
 
     text += "</ul>";
     document.getElementById("list").innerHTML = text;
@@ -74,16 +74,6 @@ function backTopage() {
 
 }
 
-function popup(name) {
-    let windowName = name;
-    window.open('popup.html', windowName, "width = 1000, height = 600, top = 200, left = 400,  location = no");
-
-}
-
-
-
-
-
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 // popup() data load;
@@ -110,4 +100,14 @@ function dataLoad(value) {
         }
     }
 
+}
+
+
+function buttonup(){
+    const modal = document.getElementById("modal")
+    modal.style.display = "flex"
+}
+function modaldown(){
+const modal = document.getElementById("modal")
+modal.style.display="none";
 }
