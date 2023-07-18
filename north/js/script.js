@@ -105,7 +105,6 @@ function dataLoad(value) {
 
 }
 
-
 function buttonup(){
     const modal = document.getElementById("modal")
     modal.style.display = "flex"
@@ -114,3 +113,19 @@ function modaldown(){
 const modal = document.getElementById("modal")
 modal.style.display="none";
 }
+
+var arr = [];
+arr[0] = 'north.png';
+arr[1] = 'south.png';
+arr[2] = 'location.png';
+let i =0;
+function changeimg()
+{
+    if(i>=arr.length){
+        i=0;
+     } 
+    document.getElementById("img").src = arr[i];
+     i++;
+     
+}
+

@@ -89,9 +89,13 @@
         #backButton {
             float:right; visibility: hidden;
         }
+        .fa-solid{
+            font-size: 10px;
+        }
     </style>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link rel ="stlyesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
 
@@ -136,14 +140,20 @@
                 <div class="close-area" onclick = 'modaldown();'>X</div>
                 <div class="row">
                     <div class="col" id="div_img">
-                        <img src="north.png" class="relative" style="width:100%; height:auto;"></image>
+                        <img src="north.png" id = "img" class="relative" style="width:100%; height:auto;"></image>
+                        <img src = "화살표.png"  onclick = 'changeimg()' class = "relative" style = "width: 10%; height:auto;"></image>
                     </div>
-                    <div class="col" id="something">
-                        <script>
-                            dataLoad(window.name);
-                        </script>
-            
+                    <div class="col">
+                        <div class = "col1">
+                        <h5>
+                            <img src = "location.png" class="relative" style = "width:5%; height:auto; left:0;"></image>
+                            주소
+                        </h5>
+                        </div>
+                        
+                           
                     </div>
+                       
             
                 </div>
             </div>
