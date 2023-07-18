@@ -4,7 +4,7 @@ var popupWindow;
 function write_list(name) {
 
     const data = [{
-        name: "이름1",
+        name: "123",
         location: "장소1",
         picture: "사진1",
     }];
@@ -23,10 +23,10 @@ function write_list(name) {
     }
 
     document.getElementById("list").innerHTML = "";  // 초기화
-    let text = '<ul  id= '+'"'+'btn'+'"'+'>';  //ul 태그
+    let text = '<ul  id= ' + '"' + 'btn' + '"' + '>';  //ul 태그
 
 
-    text +='<li id= '+'"'+'btnmodal'+'"'+" onclick='buttonup();'>"+  data[0]["name"]+ "</li>";
+    text += '<li id= ' + '"' + 'btnmodal' + '"' + " onclick='buttonup();'>" + data[0]["name"] + "</li>";
 
     text += "</ul>";
     document.getElementById("list").innerHTML = text;
@@ -105,27 +105,27 @@ function dataLoad(value) {
 
 }
 
-function buttonup(){
+
+function buttonup() {
     const modal = document.getElementById("modal")
     modal.style.display = "flex"
 }
-function modaldown(){
-const modal = document.getElementById("modal")
-modal.style.display="none";
+function modaldown() {
+    const modal = document.getElementById("modal")
+    modal.style.display = "none";
 }
 
 var arr = [];
 arr[0] = 'north.png';
 arr[1] = 'south.png';
 arr[2] = 'location.png';
-let i =0;
-function changeimg()
-{
-    if(i>=arr.length){
-        i=0;
-     } 
+let i = 0;
+function changeimg() {
+    if (i >= arr.length) {
+        i = 0;
+    }
     document.getElementById("img").src = arr[i];
-     i++;
-     
+    i++;
+
 }
 
