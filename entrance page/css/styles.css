@@ -12646,7 +12646,7 @@ body {
   left: -200%;
 }
 
-.main_title {
+/* .main_title {
   font-size: 30px;
   position: absolute;
   top: 3%;
@@ -12655,12 +12655,14 @@ body {
   color: white;
   background-color: var(--bs-orange);
   border-radius: 5px 5px 5px;
-}
+} */
 
-.container img {
-  max-width: 110%;
-  height: 110%;
-  display: block;
+.select {
+  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 3%;
+  left: 25%;
 }
 
 .img3 {
