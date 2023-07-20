@@ -9,13 +9,13 @@
 // 구에 따른 색 변경
 // 자바 스크립트로 구현 function
 function ani(name) {
-    const east = document.getElementById("east");
+    const north = document.getElementById("north");
 
-    east.innerHTML = '<img src="../east/east.png" class="img3"></img>'
+    north.innerHTML = '<img src="map.png" class="img3"></img>';
 
     setTimeout('goTo(' + '"' + name + '"' + ')', 1000);
 }
 
 function goTo(name) {
-    if (name == east) location.href = "../east/east.html";
+    if (name == north) location.href = "../north/north.html";
 }
