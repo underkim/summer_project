@@ -12650,7 +12650,7 @@ body {
 
 .img3 {
   animation: rotate_image 1s linear infinite, scale2 1s linear infinite;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 25%;
 }
 
 @keyframes rotate_image {
@@ -12661,7 +12661,7 @@ body {
 
 @keyframes scale2 {
   0% {
-    transform: scale(1)
+    transform: scale(0.8)
   }
 
   100% {
