@@ -12646,13 +12646,15 @@ body {
   left: -200%;
 }
 
-.intext {
+.main_title {
+  font-size: 30px;
   position: absolute;
   top: 3%;
-  left: 40%;
+  left: 5%;
   z-index: 1;
-  color: black;
-  font-weight: bold;
+  color: white;
+  background-color: var(--bs-orange);
+  border-radius: 5px 5px 5px;
 }
 
 .img3 {
