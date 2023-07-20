@@ -12657,6 +12657,12 @@ body {
   border-radius: 5px 5px 5px;
 }
 
+.container img {
+  max-width: 110%;
+  height: 110%;
+  display: block;
+}
+
 .img3 {
   animation: rotate_image 1s linear infinite, scale2 1s linear infinite;
   transform-origin: 50% 25%;
