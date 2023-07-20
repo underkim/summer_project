@@ -700,9 +700,10 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   /* padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto; */
+  padding-left: calc(var(--bs-gutter-x) * 0.5); */
+  margin-top: 1%;
+  margin-left: 17%;
+  margin-right: 4%;
 }
 
 @media (min-width: 576px) {
@@ -12646,23 +12647,11 @@ body {
   left: -200%;
 }
 
-/* .main_title {
+.main_title {
+  text-align: center;
   font-size: 30px;
-  position: absolute;
-  top: 3%;
-  left: 5%;
-  z-index: 1;
-  color: white;
-  background-color: var(--bs-orange);
-  border-radius: 5px 5px 5px;
-} */
-
-.select {
-  font-size: 30px;
-  position: absolute;
-  z-index: 1;
-  top: 3%;
-  left: 25%;
+  background-color: white;
+  padding-top: 1%;
 }
 
 .img3 {
