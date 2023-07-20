@@ -12646,7 +12646,14 @@ body {
   left: -200%;
 }
 
-
+.intext {
+  position: absolute;
+  top: 3%;
+  left: 40%;
+  z-index: 1;
+  color: black;
+  font-weight: bold;
+}
 
 .img3 {
   animation: rotate_image 1s linear infinite, scale2 1s linear infinite;
